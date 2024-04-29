@@ -1,7 +1,7 @@
 {
     "builds": [
       {
-        "src": "portfolio3d/wsgi.py",
+        "src": "backup_portfolio3d/wsgi.py",
         "use": "@vercel/python",
         "config": { "maxLambdaSize": "15mb", "runtime": "python3.9" }
       }
@@ -9,7 +9,7 @@
     "routes": [
       {
         "src": "/(.*)",
-        "dest": "portfolio3d/wsgi.py"
+        "dest": "backup_portfolio3d/wsgi.py"
       }
     ],
     "installCommand":"pip install -r requirements.txt"

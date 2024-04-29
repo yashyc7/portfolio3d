@@ -1,5 +1,5 @@
 """
-WSGI config for portfolio3d project.
+WSGI config for backup_portfolio3d project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,7 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'portfolio3d.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'backup_portfolio3d.settings')
 
 application = get_wsgi_application()
-app=application

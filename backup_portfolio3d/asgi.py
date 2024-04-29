@@ -1,5 +1,5 @@
 """
-ASGI config for portfolio3d project.
+ASGI config for backup_portfolio3d project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'portfolio3d.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'backup_portfolio3d.settings')
 
 application = get_asgi_application()
