@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-+k7%94_4nc39a8cvd)nk+_k(hd81a4i(moo3dn$rzmz*fg#6j='
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['.vercel.app']
+ALLOWED_HOSTS = ['.vercel.app','.now.sh','localhost']
 
 
 # Application definition
@@ -74,9 +74,14 @@ WSGI_APPLICATION = 'backup_portfolio3d.wsgi.application'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+      'default': {
+        #'ENGINE': 'django.db.backends.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'railway',
+        'USER': 'postgres',
+        'PASSWORD': 'BCTojhfIYzJoTLLaAZoLsHZNODmiKrTw',
+        'HOST': 'monorail.proxy.rlwy.net',
+        'PORT': '57169',
     }
 }
 
@@ -124,3 +129,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 STATICFILES_DIRS=[BASE_DIR,'static']
+
+
+MEDIA_URL='img/'
+
+MEDIA_ROOT=BASE_DIR/'media'
